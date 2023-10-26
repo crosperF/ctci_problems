@@ -21,6 +21,12 @@
 #     return res
 
 # optimization made is that we do not need a hash map
+# O(N + (K^2)) 
+# -> N is string length
+# -> k is res string length (because of appending string) 
+
+# K^2 can be reduced to linear if a sting builder is used
+
 def compress(s):
     counter = 0
     res = ""
